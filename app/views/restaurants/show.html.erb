@@ -1,0 +1,21 @@
+<h2>Restaurant show</h2>
+</br>
+<table>
+  <table style="width: 600px; align-content: center">
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone Number</th>
+    <th>Category</th>
+  </tr>
+  <tr>
+    <td><%= @restaurant.name %></td>
+    <td><%= @restaurant.address %></td>
+    <td><%= @restaurant.phone_number %></td>
+    <td><%= @restaurant.category %></td>
+  </tr>
+</table>
+</br>
+<p><%= link_to "Back to list", restaurants_path %></p>
+</br>
+<p><%= link_to "Add Review", new_restaurant_review_path %></p>
